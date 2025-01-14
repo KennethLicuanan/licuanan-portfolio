@@ -1,0 +1,28 @@
+.first h1{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 40px;
+    margin-top: 50px;
+}
+
+.first p{
+    font-family: cursive;
+    text-align: justify;
+    font-size: 20px;
+    margin: 100px 100px 100px 100px;
+}
+
+.personal img{
+    margin-top: 50px;
+}
+
+.personal{
+    text-align: center;
+}
+
+.personal h3{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    font-size: 40px;
+}
