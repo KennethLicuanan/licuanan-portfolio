@@ -1,3 +1,9 @@
+body {
+    background-image: url('assets/bg.avif'); /* Replace with your image path */
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+  }
+  
 .first h1{
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
@@ -14,7 +20,8 @@
 }
 
 .personal img{
-    margin-top: 50px;
+    border-radius: 30%;
+    height: 400px;
 }
 
 .personal{
@@ -26,3 +33,52 @@
     font-weight: bolder;
     font-size: 40px;
 }
+
+
+.navbar-glassy {
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white */
+    backdrop-filter: blur(10px); /* Glass effect with blur */
+    border: 1px solid rgba(102, 102, 102, 0.3); /* Light border for separation */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    max-width: 80%; /* Adjust the navbar's maximum width */
+    margin: 0 auto; /* Center the navbar horizontally */
+    border-radius: 10px; /* Optional: Add rounded corners */
+    margin-top: 5%;
+  }
+  
+  .navbar-glassy .nav-link {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(0, 0, 0); /* Default link color */
+    transition: color 0.3s ease, border-bottom 0.3s ease; /* Smooth transition for color and underline */
+    text-decoration: none; /* Remove default underline */
+  }
+  
+  .navbar-glassy .nav-link:hover {
+    color: black; /* Change to black on hover */
+    text-decoration: none; /* Add underline on hover */
+  }
+  
+  .navbar-glassy .nav-link.active {
+    color: black; /* Active link color */
+    border-bottom: 2px solid black; /* Add a solid underline for the active link */
+    text-decoration: none; /* Ensure no extra underline */
+  }
+  
+  .navbar-glassy .nav-link.active:hover {
+    color: black; /* Ensure color remains black on hover for active link */
+    text-decoration: none; /* Add underline for consistency */
+  }
+  
+  
+  .navbar-glassy .navbar-brand img {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); /* Add depth to the logo */
+  }
+  
+  .navbar-glassy .navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.5); /* Transparent border for the toggler */
+  }
+  
+  .navbar-glassy .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255, 255, 255, 0.7)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }
+  
