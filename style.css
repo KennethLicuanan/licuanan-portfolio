@@ -1,120 +1,219 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-    background-image: url('assets/bg.avif'); /* Replace with your image path */
-    background-size: cover; /* Ensures the image covers the entire background */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
-  }
-  
-.first h1{
-    font-family: 'Courier New', Courier, monospace;
-    text-align: center;
-    font-weight: bolder;
-    font-size: 40px;
-    margin-top: 50px;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
 }
 
-.first p{
-    font-family: cursive;
-    text-align: justify;
-    font-size: 20px;
-    margin: 100px 100px 100px 100px;
+header {
+  background: #4CAF50;
+  color: white;
+  padding: 1.5rem 0;
+  text-align: center;
 }
 
-.personal img{
-    border-radius: 30%;
-    height: 300px;
-    width: 300px;
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
 }
 
-.personal{
-    text-align: center;
+header p {
+  font-size: 1.2rem;
 }
 
-.personal h2{
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: bolder;
-    font-size: 40px;
+nav {
+  display: flex;
+  justify-content: center;
+  background: #333;
+  padding: 0.8rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
-.personal h4, h5{
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1.2rem;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
+
+nav a:hover {
+  background: #4CAF50;
+  border-radius: 5px;
+}
+
+section {
+  padding: 3rem 1rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.hero {
+  text-align: center;
+  padding: 2rem;
+  background: linear-gradient(to right, #4CAF50, #81C784);
+  color: white;
+  border-radius: 10px;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
   font-family: 'Courier New', Courier, monospace;
-  font-weight: bolder;
 }
 
-
-h3, h4, h5 {
-    margin-top: 10px;
-}
-.background-column {
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    background: #ffffff;
-    margin-top: 20px;
-}
-.background-column h3 {
-    color: #007bff;
-    margin-bottom: 15px;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: bold;
-}
-.background-column ul {
-    padding-left: 20px;
-}
-.background-column ul li {
-    margin-bottom: 10px;
-    font-size: 1rem;
-    color: #535353;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-.background-column ul li strong {
-    color: #000000;
-    font-family: cursive;
+.hero p {
+  font-size: 1.2rem;
+  margin-top: 1rem;
 }
 
-.navbar-glassy {
-    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white */
-    backdrop-filter: blur(10px); /* Glass effect with blur */
-    border: 1px solid rgba(102, 102, 102, 0.3); /* Light border for separation */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    max-width: 80%; /* Adjust the navbar's maximum width */
-    margin: 0 auto; /* Center the navbar horizontally */
-    border-radius: 10px; /* Optional: Add rounded corners */
-    margin-top: 5%;
+.personal {
+text-align: left;
+padding: 20px 40px;
+background: linear-gradient(135deg, #ffffff, #f3f4f6);
+border-radius: 15px;
+box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+font-family: 'Courier New', Courier, monospace;
+}
+
+.personal h2 {
+  font-size: 2rem;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #4CAF50;
+}
+
+.personal h4 {
+  margin: 0.8rem 0;
+  font-size: 1.1rem;
+  color: #555;
+  display: flex;
+  align-items: center;
+}
+
+.personal h4 strong {
+  margin-right: 10px;
+  color: #333;
+}
+
+.personal h4::before {
+  content: "•";
+  font-size: 1.4rem;
+  color: #4CAF50;
+  margin-right: 10px;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  padding-top: 1rem;
+}
+
+.project {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+  background: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.project:hover {
+  transform: translateY(-5px);
+}
+
+.project img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.project h3 {
+  font-family: 'Courier New', Courier, monospace;
+  margin-top: 1rem;
+}
+
+.project h5 {
+  text-align: start;
+  margin-top: 0.5rem;
+}
+
+.hobbies {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  padding-top: 1rem;
+}
+
+.hobby {
+  text-align: center;
+  padding: 1rem;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.hobby img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.hobby h3 {
+  margin-top: 0.5rem;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem 0;
+  background: #333;
+  color: white;
+  margin-top: 2rem;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  nav a {
+      font-size: 0.9rem;
+      padding: 0.5rem;
   }
-  
-  .navbar-glassy .nav-link {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: rgb(0, 0, 0); /* Default link color */
-    transition: color 0.3s ease, border-bottom 0.3s ease; /* Smooth transition for color and underline */
-    text-decoration: none; /* Remove default underline */
+
+  .hero h2 {
+      font-size: 2rem;
   }
-  
-  .navbar-glassy .nav-link:hover {
-    color: black; /* Change to black on hover */
-    text-decoration: none; /* Add underline on hover */
+
+  .hero p {
+      font-size: 1rem;
   }
-  
-  .navbar-glassy .nav-link.active {
-    color: black; /* Active link color */
-    border-bottom: 2px solid black; /* Add a solid underline for the active link */
-    text-decoration: none; /* Ensure no extra underline */
+
+  .personal h2 {
+      font-size: 1.8rem;
   }
-  
-  .navbar-glassy .nav-link.active:hover {
-    color: black; /* Ensure color remains black on hover for active link */
-    text-decoration: none; /* Add underline for consistency */
+
+  .projects {
+      grid-template-columns: 1fr;
   }
-  
-  
-  .navbar-glassy .navbar-brand img {
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); /* Add depth to the logo */
+
+  .hobbies {
+      grid-template-columns: 1fr;
   }
-  
-  .navbar-glassy .navbar-toggler {
-    border-color: rgba(255, 255, 255, 0.5); /* Transparent border for the toggler */
-  }
-  
-  .navbar-glassy .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255, 255, 255, 0.7)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-  }
-  
+}
